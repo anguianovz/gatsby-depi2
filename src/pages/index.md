@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Departamento de Posgrado e Investigacion
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: DEPI - UJED
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
