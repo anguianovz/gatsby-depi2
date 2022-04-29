@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Departamento de Posgrado e Investigacion
-image: /img/home-jumbotron.jpg
+image: /img/depi.png
 heading: DEPI - UJED
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
