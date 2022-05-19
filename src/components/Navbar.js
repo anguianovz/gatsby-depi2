@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import UJED from "../img/logo-ujed.png";
+import UJED from "../img/logo-ujed-tred.png";
 //import logo from "../img/logo.svg";
 import logo from "../img/FADER.png";
 
@@ -39,15 +39,12 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        {/*<div className="container">*/}
+		  	{/*<div className="container">*/}   
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="DEPI" width= "100" height="auto" />
+            <img src={logo} alt="DEPI" width= "100" height="auto" />
              {/*style={{ width: "66px" }}*/}
             </Link>
-            <a class="navbar-item">
-              DIVISIÓN DE ESTUDIOS DE POSGRADO E INVESTIGACIÓN
-            </a>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -60,23 +57,18 @@ const Navbar = class extends React.Component {
               <span />
               <span />
               <span />
-            </div>
+           </div>
           </div>
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <div className="navbar-item has-dropdown is-hoverable"> {/* to="/about" */}
-                Quienes somois
-                <div className="navbar-dropdown">
-                  <a className="navbar-item">
-                    Overview
-                  </a>
-                </div>
-              </div>
+              <Link className="navbar-item" to="/about">
+                Quienes somos   
+              </Link>
               <Link className="navbar-item" to="/products">
-                Oferta Académica
+                Oferta 
               </Link>
               <Link className="navbar-item" to="/blog">
                 Convocatoria y Eventos
@@ -101,9 +93,11 @@ const Navbar = class extends React.Component {
               </a>
             </div>
           </div>
-        {/*</div>*/}
+        	{/*</div>*/}
       </nav>
+      
     );
+    
   }
 };
 
