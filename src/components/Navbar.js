@@ -13,7 +13,7 @@ const Navbar = class extends React.Component {
     };
   }
 
-  toggleHamburger() {
+ /*toggleHamburger() {
     // toggle the active boolean in the state
     this.setState(
       {
@@ -31,22 +31,22 @@ const Navbar = class extends React.Component {
             });
       }
     );
-  }
+  */
+
   render() {
     return (
       <nav
-        className="navbar is-transparent is-primary"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+        className="navbar is-transparent is-primary">
 		  	{/*<div className="container">*/}   
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="DEPI" width= "100" height="auto" />
+            <img src={logo} alt="DEPI" width= "auto" height="100" />
              {/*style={{ width: "66px" }}*/}
+             División de Estudios de Posgrado e Investigación
             </Link>
+            
             {/* Hamburger menu */}
-            <div
+            {/*<div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               role="menuitem"
@@ -57,14 +57,12 @@ const Navbar = class extends React.Component {
               <span />
               <span />
               <span />
-           </div>
+           </div>*/}
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
+          <div className="navbar-menu">
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+              
+              {/*<Link className="navbar-item" to="/about">
                 Quienes somos   
               </Link>
               <Link className="navbar-item" to="/products">
@@ -78,7 +76,7 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
-              </Link>
+              </Link>*/}
             </div>
             <div className="navbar-end has-text-centered">
               <a
@@ -88,7 +86,7 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span>
-                  <img src={UJED} alt="UJED" />
+                  <img src={UJED} alt="UJED" width= "150" height="auto"/>
                 </span>
               </a>
             </div>

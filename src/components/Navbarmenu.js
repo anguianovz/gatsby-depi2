@@ -12,7 +12,7 @@ const Navbarmenu = class extends React.Component {
     };
   }
 
-  toggleHamburger() {
+  /*toggleHamburger() {
     // toggle the active boolean in the state
     this.setState(
       {
@@ -31,12 +31,30 @@ const Navbarmenu = class extends React.Component {
       }
     );
   }
-
+  */
 render() {
 return (
-    <nav className="navbar is-transparent has-shadow">
-			{/*<div className="container">*/}
-				<div className="navbar-menu">
+    <nav className="navbar is-transparent is-link has-shadow" 
+    role="navigation" aria-label="main-navigation">
+			<div className="container">
+        
+        {/* Hamburger menu */}
+            <div
+              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              data-target="navMenu"
+              role="menuitem"
+              tabIndex={0}
+              onKeyPress={() => this.toggleHamburger()}
+              onClick={() => this.toggleHamburger()}
+            >
+              <span />
+              <span />
+              <span />
+           </div>
+          
+           
+				
+
         <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveclassName}`}
@@ -55,7 +73,7 @@ return (
 						</div>
 					</div>
 				</div>
-        {/*</div>*/}
+        
 			</div>
 		</nav>
     );
